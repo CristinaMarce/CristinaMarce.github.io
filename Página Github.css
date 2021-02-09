@@ -22,7 +22,6 @@ body {
 
 .header {
     background-image: url(img/palms.jpg);
-    
     color: white;
     grid-area: header;
     font-size: 3rem;
