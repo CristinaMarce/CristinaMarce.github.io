@@ -1,7 +1,115 @@
+*,*::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-image: url(img/clouds.jpg);
     background-size: cover;
     background-position: center;
+}
+
+@media (max-width: 414px){
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat (2, 1fr);
+        grid-template-rows: repeat (9, 1fr);
+    }
+
+    .instagram {
+        width: 9%;
+    }
+
+    .Twitter {
+        width: 14%;
+    }
+
+    .header {
+        grid-column: 1 / -1;
+        grid-row: 1 / 1;
+    }
+
+    .menu {
+        grid-column: 1 / -1;
+        grid-row: 2 / 2;
+    }
+
+    .Fuji {
+        grid-column: 1 / 1;
+        grid-row: 3 / 3;
+    }
+
+    .Uyuni {
+        grid-column: 2 / -1;
+        grid-row: 3 / 3;
+    }
+
+    .Muralla {
+        grid-column: 1 / 1;
+        grid-row: 4 / 4;
+    }
+
+    .Cataratas {
+        grid-column: 2 / -1;
+        grid-row: 4 / 4;
+    }
+
+    .Piramides {
+        grid-column: 1 / 1;
+        grid-row: 5 / 5;
+    }
+
+    .Pammukale {
+        grid-column: 2 / -1;
+        grid-row: 5 / 5;
+    }
+
+    .Gruta {
+        grid-column: 1 / 1;
+        grid-row: 6 / 6;
+    }
+
+    .Canyon {
+        grid-column: 2 / -1;
+        grid-row: 6 / 6;
+    }
+
+    .Palacio {
+        grid-column: 1 / -1;
+        grid-row: 7 / 7;
+    }
+
+    form {
+        grid-column: 1 / 1;
+        grid-row: 8 / 8;
+    }
+
+    footer {
+        grid-column: 1 / -1;
+        grid-row: 9 / 9;
+    }
+
+    footer > img {
+        width: 20%;
+        animation-name: emirates;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        position: relative;
+    }
+    
+    @keyframes emirates {
+        from {
+            left: 0%;
+            top: 0%;   
+        }
+        to{
+            left: 80%;
+            top: 0%;
+        }
+    }    
 }
 
 .grid-container {
@@ -22,6 +130,7 @@ body {
 
 .header {
     background-image: url(img/palms.jpg);
+    
     color: white;
     grid-area: header;
     font-size: 3rem;
@@ -148,42 +257,22 @@ input[type="submit"] {
     
 }
 
-.emirates {
-    width: 40%;
+footer > img {
+    width: 20%;
     animation-name: emirates;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
     position: relative;
 }
 
 @keyframes emirates {
-    from{
-        left: 10rem;
-        top: 30rem;   
+    from {
+        left: 0%;
+        top: 0%;   
     }
     to{
-        left: 70rem;
-        top: 0rem;
+        left: 80%;
+        top: 0%;
     }
-}    
-
-.iberia {
-    width: 40%;
-    animation-name: iberia;
-    animation-duration: 3s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-    position: relative;
-}
-
-@keyframes iberia {
-    from{
-        left: 0rem;
-        top: 0rem;
-    }    
-    to{
-        left: 60rem;
-        top: 30rem;
-    }
-}    
+}  
