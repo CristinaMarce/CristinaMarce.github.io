@@ -93,14 +93,14 @@ body {
 
     footer > img {
         width: 20%;
-        animation-name: emirates;
+        animation-name: iberia;
         animation-duration: 1s;
         animation-timing-function: ease;
         animation-iteration-count: infinite;
         position: relative;
     }
     
-    @keyframes emirates {
+    @keyframes iberia {
         from {
             left: 0%;
             top: 0%;   
@@ -258,21 +258,21 @@ input[type="submit"] {
 }
 
 footer > img {
-    width: 20%;
-    animation-name: emirates;
-    animation-duration: 1s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-    position: relative;
-}
-
-@keyframes emirates {
-    from {
-        left: 0%;
-        top: 0%;   
+        width: 20%;
+        animation-name: iberia;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        position: relative;
     }
-    to{
-        left: 80%;
-        top: 0%;
-    }
-}  
+    
+    @keyframes iberia {
+        from {
+            left: 0%;
+            top: 0%;   
+        }
+        to{
+            left: 80%;
+            top: 0%;
+        }
+    }  
